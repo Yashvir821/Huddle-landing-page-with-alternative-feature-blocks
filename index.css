@@ -175,7 +175,7 @@ button:hover{
     opacity: 98%;
 }
 #footer p , li:not(#footer div li){
-    opacity: 89.8%;
+    opacity: 89%;
 }
 #footer #first li{
     width: 400px;
