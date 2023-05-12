@@ -1,0 +1,232 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --white: hsl(0 , 0% , 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+button{
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 75%;
+}
+.pinkbuttn{
+    width: 290px;
+    height: 60px;
+    border-radius: 100px;
+    background: var(--pink);
+    color: var(--pale-cyan);
+    font-size: 15px;
+    font-weight: 400;
+    box-shadow: 2px 2px 2px rgb(212, 212, 212);
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 99vw;
+    height: 100vh;
+    background: url('./images/bg-hero-desktop.svg') no-repeat var(--pale-cyan);
+    background-size: 100% 100%;
+    padding: 50px 130px 0 80px;
+}
+.intro > */*Here '> *' is indicating all the childrens of intro div*/{
+    width: 100%;
+}
+.flex{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex img{
+    width: 170px;
+    height: 30px;
+}
+.flex button{
+    width: 185px;
+    height: 45px;
+    background: var(--white);
+    border-radius: 100px;
+    box-shadow: 2px 2px 8px rgb(204, 204, 204);
+    font-weight: 600;
+    font-family: 'Poppins' , sans-serif;
+    color: var(--dark-cyan);
+}
+.flex button:hover{
+    opacity: 80%;
+}
+.rest{
+    padding: 70px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+.rest .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 100px;
+    color: var(--dark-cyan)
+}
+.text h1{
+    font-size: 38px;
+    padding: 0 80px 45px 0;
+    line-height: 50px;
+}
+.text p{
+    font-size: 17px;
+    line-height: 22px;
+    padding-bottom: 50px;
+}
+.rest img{
+    width: 820px;
+    height: 62  4px;
+}
+#advice{
+    padding: 200px 0 0 0;
+    width: 80vw;
+    height: 1770px;
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-gap: 50px;
+}
+#advice > *{
+    box-shadow: 5px 5px 15px rgb(228, 228, 228);
+    border-radius: 20px;
+    padding: 0 50px 0 120px;
+    display: grid;
+}
+#advice > *:not(#flow){
+    grid-template-columns: 2fr 1fr;
+}
+#advice img{
+    width: 450px;
+    display: flex;
+    align-self: center;
+}
+#flow{
+    grid-template-columns: 1fr 2fr;
+}
+#flow #left{
+    padding: 0 0 0 150px;
+}
+#left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 200px 0 0;
+}
+#left h1{
+    color: var(--dark-cyan);
+}
+#left p{
+    color: var(--grayish-blue);
+    padding-top: 25px;
+    font-size: 17.5px;
+    line-height: 25px;
+}
+#build-community{
+    width: 40vw;
+    height: 250px;
+    box-shadow: 1px 1px 7px var(--dark-cyan);
+    border-radius: 20px;
+    color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background: var(--white);
+    z-index: 1;
+}
+#build-community button{
+    margin-top: 30px;
+}
+#footer{
+    width: 99vw;
+    height: 550px;
+    padding: 200px 30px 30px 120px;
+    background: var(--dark-cyan);
+    color: var(--pale-cyan);
+    display: flex;
+    font-weight: 100;
+    margin-top: -100px;
+}
+#footer #logo{
+    width: 200px;
+    height: 32.5px;
+    margin-bottom: 40px;
+}
+#footer div > *{
+    opacity: 98%;
+}
+#footer p , li:not(#footer div li){
+    opacity: 89.8%;
+}
+#footer #first li{
+    width: 400px;
+    line-height: 23px;
+}
+#footer div img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+#first ul li{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+#last{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    margin: 100px 0 0 130px;
+    font-size: 17.5px;
+}
+#last p{
+    padding: 6px 0 0 0;
+}
+#last li{
+    display: flex;
+    flex-direction: column;
+}
+#last li hr{
+    transition: all 1s;
+    display: block;
+}
+#last li hr{
+    width: 0px;
+    color: transparent;
+}
+#last li:hover{
+    cursor: pointer;
+}
+#last li hr:hover{
+    width: 80%;
+}
+#lastpara{
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 50px;
+    padding-left: 140px;
+}
+@media screen and (max-width: 1440px){
+    #lastpara{
+        padding-left: 10px;
+    }
+}
