@@ -204,20 +204,14 @@ button:hover{
 #last li{
     display: flex;
     flex-direction: column;
-}
-#last li hr{
-    transition: all 1s;
-    display: block;
-}
-#last li hr{
-    width: 0px;
-    color: transparent;
+    justify-content: center;
 }
 #last li:hover{
     cursor: pointer;
 }
-#last li hr:hover{
-    width: 80%;
+#last li div{
+    background: white;
+/*     height: 2px; */
 }
 #lastpara{
     display: flex;
