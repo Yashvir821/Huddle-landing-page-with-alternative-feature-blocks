@@ -211,7 +211,7 @@ button:hover{
 }
 #last li div{
     background: white;
-/*     height: 2px; */
+    height: 2px;
 }
 #lastpara{
     display: flex;
